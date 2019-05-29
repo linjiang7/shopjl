@@ -43,7 +43,7 @@ export default {
           'EWE': 'https://www.ewe.com.au/html/track.html?cno=',
           '方舟': 'http://www.arkexpress.com.au/searchOrder?orderNo='          
         },
-      css: 'background-image: url(http://img4.imgtn.bdimg.com/it/u=24037971,674320651&fm=26&gp=0.jpg);',
+      css: 'background-image: url(https://firebasestorage.googleapis.com/v0/b/firstbot-505d6.appspot.com/o/background.jpg?alt=media&token=1602f88d-965d-4d72-80ac-d447051663cd);',
     }
   },
   methods: {
