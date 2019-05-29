@@ -1,12 +1,29 @@
 <template>
   <div class="hello">
-    <h2>{{ msg }}</h2>
+    <h1>{{ msg }}</h1>
+    <p>↓ 请输入运单号 ↓</p>
     <select v-model="carrier">
 	    <option v-for="carrier in carrierList" v-bind:key="carrier" :value=carrier>{{carrier}}</option>
     </select>
     <input type="text" v-model="orderNum" placeholder="订单号">
     <br/>
     <button v-on:click="enter">查找</button>
+    <div :style="css">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </div>
   </div>
 </template>
 
@@ -15,7 +32,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '请输入运单号',
+      msg: '欢迎光临JL的小店',
       orderNum: null,
       carrier: '4px',
       carrierList: ['4px', '华夏', 'EWE', '方舟'],
@@ -25,7 +42,8 @@ export default {
           '华夏': 'http://www.auvanda.com/barCodeDetail.html?code=',
           'EWE': 'https://www.ewe.com.au/html/track.html?cno=',
           '方舟': 'http://www.arkexpress.com.au/searchOrder?orderNo='          
-        }
+        },
+      css: 'background-image: url(http://img4.imgtn.bdimg.com/it/u=24037971,674320651&fm=26&gp=0.jpg);',
     }
   },
   methods: {
